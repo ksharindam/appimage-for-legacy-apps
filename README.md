@@ -7,7 +7,8 @@ AppImages are single file app, no need to install, no dependency issues. After d
 
 ## Celestia  
 Celestia is a Space Simulator software. You can move around the solar system, galaxy, see planets, moons, satelites, comets, orbits. Predict solar and lunar eclipse.  
-
+Download : [x86-64](https://github.com/ksharindam/appimage-for-legacy-apps/releases/latest/download/Celestia-x86_64.AppImage) [armhf](https://github.com/ksharindam/appimage-for-legacy-apps/releases/latest/download/Celestia-armhf.AppImage)  
 
 ## BKChem  
 It is best, most simple yet most featureful 2D chemical drawing tool for Linux.  
+Download : [x86-64](https://github.com/ksharindam/appimage-for-legacy-apps/releases/latest/download/BKchem-x86_64.AppImage) [armhf](https://github.com/ksharindam/appimage-for-legacy-apps/releases/latest/download/BKchem-armhf.AppImage)  

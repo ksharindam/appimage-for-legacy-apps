@@ -1,0 +1,4 @@
+*.AppImage
+AppDir/
+build/
+cache/

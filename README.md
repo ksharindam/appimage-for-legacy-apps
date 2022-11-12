@@ -1,2 +1,13 @@
-# appimage-for-legacy-apps
-AppImages and AppImage scripts for legacy apps removed from Linux distros
+# AppImage for Legacy Apps  
+Some of my favourite Linux apps are being removed from the repositories.  
+So whenever I upgrade my distro to a newer version, I lost few apps.  
+The only way to keep them using, is by creating AppImages.  
+
+AppImages are single file app, no need to install, no dependency issues. After downloading you can just mark it executable and then double-click to run.  
+
+## Celestia  
+Celestia is a Space Simulator software. You can move around the solar system, galaxy, see planets, moons, satelites, comets, orbits. Predict solar and lunar eclipse.  
+
+
+## BKChem  
+It is best, most simple yet most featureful 2D chemical drawing tool for Linux.  

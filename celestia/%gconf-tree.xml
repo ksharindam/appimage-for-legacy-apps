@@ -1,0 +1,413 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="desktop">
+		<dir name="gnome">
+			<dir name="url-handlers">
+				<dir name="cel">
+					<entry name="needs_terminal" mtime="1668144573" schema="/schemas/desktop/gnome/url-handlers/cel/needs_terminal"/>
+					<entry name="enabled" mtime="1668144573" schema="/schemas/desktop/gnome/url-handlers/cel/enabled"/>
+					<entry name="command" mtime="1668144573" schema="/schemas/desktop/gnome/url-handlers/cel/command"/>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+	<dir name="schemas">
+		<dir name="desktop">
+			<dir name="gnome">
+				<dir name="url-handlers">
+					<dir name="cel">
+						<entry name="needs_terminal" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+							<local_schema locale="C" short_desc="Whether or not the application starts in a terminal.">
+								<default type="bool" value="false"/>
+							</local_schema>
+						</entry>
+						<entry name="enabled" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+							<local_schema locale="C" short_desc="Whether or not the URL handler is enabled.">
+								<default type="bool" value="true"/>
+							</local_schema>
+						</entry>
+						<entry name="command" mtime="1668144573" type="schema" stype="string" owner="celestia">
+							<local_schema locale="C" short_desc="Command to use to run cel:// URLs.">
+								<default type="string">
+									<stringvalue>celestia &quot;%s&quot;</stringvalue>
+								</default>
+							</local_schema>
+						</entry>
+					</dir>
+				</dir>
+			</dir>
+		</dir>
+		<dir name="apps">
+			<dir name="celestia">
+				<entry name="videoSync" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+					<local_schema locale="C" short_desc="Sync framerate to video refresh rate.">
+						<default type="bool" value="true"/>
+					</local_schema>
+				</entry>
+				<entry name="altSurfaceName" mtime="1668144573" type="schema" stype="string" owner="celestia">
+					<local_schema locale="C" short_desc="Alternate surface description.">
+						<default type="string">
+							<stringvalue></stringvalue>
+						</default>
+					</local_schema>
+				</entry>
+				<entry name="textureResolution" mtime="1668144573" type="schema" stype="int" owner="celestia">
+					<local_schema locale="C" short_desc="Resolution of textures.">
+						<default type="int" value="1"/>
+						<longdesc>0=Low, 1=Medium, 2=High</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="starStyle" mtime="1668144573" type="schema" stype="int" owner="celestia">
+					<local_schema locale="C" short_desc="Style of star rendering.">
+						<default type="int" value="0"/>
+						<longdesc>0=Fuzzy Points, 1=Points, 2=Scaled Discs</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="fullScreen" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+					<local_schema locale="C" short_desc="Fullscreen state.">
+						<default type="bool" value="false"/>
+					</local_schema>
+				</entry>
+				<entry name="verbosity" mtime="1668144573" type="schema" stype="int" owner="celestia">
+					<local_schema locale="C" short_desc="Verbosity of information text displayed.">
+						<default type="int" value="1"/>
+					</local_schema>
+				</entry>
+				<entry name="showLocalTime" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+					<local_schema locale="C" short_desc="Display time in terms of local time zone.">
+						<default type="bool" value="true"/>
+					</local_schema>
+				</entry>
+				<entry name="distanceLimit" mtime="1668144573" type="schema" stype="int" owner="celestia">
+					<local_schema locale="C" short_desc="Rendering limit in light-years.">
+						<default type="int" value="1000000"/>
+					</local_schema>
+				</entry>
+				<entry name="galaxyLightGain" mtime="1668144573" type="schema" stype="float" owner="celestia">
+					<local_schema locale="C" short_desc="Brightness control for galaxies.">
+						<default type="float" value="0"/>
+					</local_schema>
+				</entry>
+				<entry name="visualMagnitude" mtime="1668144573" type="schema" stype="float" owner="celestia">
+					<local_schema locale="C" short_desc="Visual magnitude.">
+						<default type="float" value="8.5"/>
+					</local_schema>
+				</entry>
+				<entry name="ambientLight" mtime="1668144573" type="schema" stype="float" owner="celestia">
+					<local_schema locale="C" short_desc="Ambient light value (default: low).">
+						<default type="float" value="0.10000000000000001"/>
+					</local_schema>
+				</entry>
+				<entry name="winY" mtime="1668144573" type="schema" stype="int" owner="celestia">
+					<local_schema locale="C" short_desc="Vertical window position.">
+						<default type="int" value="-1"/>
+					</local_schema>
+				</entry>
+				<entry name="winX" mtime="1668144573" type="schema" stype="int" owner="celestia">
+					<local_schema locale="C" short_desc="Horizontal window position.">
+						<default type="int" value="-1"/>
+					</local_schema>
+				</entry>
+				<entry name="winHeight" mtime="1668144573" type="schema" stype="int" owner="celestia">
+					<local_schema locale="C" short_desc="Render area height.">
+						<default type="int" value="480"/>
+					</local_schema>
+				</entry>
+				<entry name="winWidth" mtime="1668144573" type="schema" stype="int" owner="celestia">
+					<local_schema locale="C" short_desc="Render area width.">
+						<default type="int" value="640"/>
+					</local_schema>
+				</entry>
+				<dir name="orbits">
+					<entry name="unknown" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Show orbits of unclassified objects.">
+							<default type="bool" value="false"/>
+						</local_schema>
+					</entry>
+					<entry name="invisible" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Show orbits of invisible objects.">
+							<default type="bool" value="false"/>
+						</local_schema>
+					</entry>
+					<entry name="spacecraft" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Show orbits of spacecraft.">
+							<default type="bool" value="false"/>
+						</local_schema>
+					</entry>
+					<entry name="comet" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Show orbits of comets.">
+							<default type="bool" value="false"/>
+						</local_schema>
+					</entry>
+					<entry name="asteroid" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Show orbits of asteroids.">
+							<default type="bool" value="false"/>
+						</local_schema>
+					</entry>
+					<entry name="moon" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Show orbits of moons.">
+							<default type="bool" value="true"/>
+						</local_schema>
+					</entry>
+					<entry name="planet" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Show orbits of planets.">
+							<default type="bool" value="true"/>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="labels">
+					<entry name="globular" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Label globular objects.">
+							<default type="bool" value="false"/>
+						</local_schema>
+					</entry>
+					<entry name="i18n" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Constellations are shown with latin names.">
+							<default type="bool" value="false"/>
+						</local_schema>
+					</entry>
+					<entry name="openCluster" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Label open cluster objects.">
+							<default type="bool" value="false"/>
+						</local_schema>
+					</entry>
+					<entry name="nebula" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Label nebula objects.">
+							<default type="bool" value="false"/>
+						</local_schema>
+					</entry>
+					<entry name="comet" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Label comet objects.">
+							<default type="bool" value="false"/>
+						</local_schema>
+					</entry>
+					<entry name="location" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Label surface locations on bodies.">
+							<default type="bool" value="false"/>
+						</local_schema>
+					</entry>
+					<entry name="spacecraft" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Label man-made vehicles.">
+							<default type="bool" value="false"/>
+						</local_schema>
+					</entry>
+					<entry name="asteroid" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Label asteroid objects.">
+							<default type="bool" value="false"/>
+						</local_schema>
+					</entry>
+					<entry name="galaxy" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Label known galaxies.">
+							<default type="bool" value="false"/>
+						</local_schema>
+					</entry>
+					<entry name="constellation" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Label constellations.">
+							<default type="bool" value="false"/>
+						</local_schema>
+					</entry>
+					<entry name="moon" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Label moons.">
+							<default type="bool" value="false"/>
+						</local_schema>
+					</entry>
+					<entry name="planet" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Label planetary bodies.">
+							<default type="bool" value="false"/>
+						</local_schema>
+					</entry>
+					<entry name="star" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Label stars.">
+							<default type="bool" value="false"/>
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="render">
+					<entry name="gridGalactic" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Render galactic grid lines.">
+							<default type="bool" value="false"/>
+						</local_schema>
+					</entry>
+					<entry name="gridHorizontal" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Render horizontal grid lines.">
+							<default type="bool" value="false"/>
+						</local_schema>
+					</entry>
+					<entry name="gridEcliptic" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Render ecliptic grid lines.">
+							<default type="bool" value="false"/>
+						</local_schema>
+					</entry>
+					<entry name="globulars" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Render globulars.">
+							<default type="bool" value="false"/>
+						</local_schema>
+					</entry>
+					<entry name="openClusters" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Render open clusters.">
+							<default type="bool" value="false"/>
+						</local_schema>
+					</entry>
+					<entry name="nebulae" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Render nebulae.">
+							<default type="bool" value="true"/>
+						</local_schema>
+					</entry>
+					<entry name="partialTrajectories" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Render partial trajectories.">
+							<default type="bool" value="false"/>
+						</local_schema>
+					</entry>
+					<entry name="markers" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Render coloured markers.">
+							<default type="bool" value="false"/>
+						</local_schema>
+					</entry>
+					<entry name="cometTails" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Render tails on comet objects.">
+							<default type="bool" value="true"/>
+						</local_schema>
+					</entry>
+					<entry name="autoMag" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Render body brightness with auto-magnitude.">
+							<default type="bool" value="true"/>
+						</local_schema>
+					</entry>
+					<entry name="boundaries" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Render boundary lines between constellations.">
+							<default type="bool" value="false"/>
+						</local_schema>
+					</entry>
+					<entry name="ringShadows" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Render shadows cast by planetary rings.">
+							<default type="bool" value="true"/>
+						</local_schema>
+					</entry>
+					<entry name="eclipseShadows" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Render shadows of bodies on other bodies.">
+							<default type="bool" value="true"/>
+						</local_schema>
+					</entry>
+					<entry name="smoothLines" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Render lines anti-aliased.">
+							<default type="bool" value="true"/>
+						</local_schema>
+					</entry>
+					<entry name="atmospheres" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Render atmosphere on planets.">
+							<default type="bool" value="true"/>
+						</local_schema>
+					</entry>
+					<entry name="nightMaps" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Render night-side textures on planets.">
+							<default type="bool" value="true"/>
+						</local_schema>
+					</entry>
+					<entry name="celestialSphere" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Render celestial grid lines.">
+							<default type="bool" value="false"/>
+						</local_schema>
+					</entry>
+					<entry name="orbits" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Render orbit lines.">
+							<default type="bool" value="false"/>
+						</local_schema>
+					</entry>
+					<entry name="cloudMaps" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Render clouds on planetary bodies.">
+							<default type="bool" value="true"/>
+						</local_schema>
+					</entry>
+					<entry name="diagrams" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Render constellation lines.">
+							<default type="bool" value="false"/>
+						</local_schema>
+					</entry>
+					<entry name="galaxies" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Render galaxies.">
+							<default type="bool" value="true"/>
+						</local_schema>
+					</entry>
+					<entry name="planets" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Render planets.">
+							<default type="bool" value="true"/>
+						</local_schema>
+					</entry>
+					<entry name="stars" mtime="1668144573" type="schema" stype="bool" owner="celestia">
+						<local_schema locale="C" short_desc="Render stars.">
+							<default type="bool" value="true"/>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+	<dir name="apps">
+		<dir name="celestia">
+			<entry name="videoSync" mtime="1668144573" schema="/schemas/apps/celestia/videoSync"/>
+			<entry name="altSurfaceName" mtime="1668144573" schema="/schemas/apps/celestia/altSurfaceName"/>
+			<entry name="textureResolution" mtime="1668144573" schema="/schemas/apps/celestia/textureResolution"/>
+			<entry name="starStyle" mtime="1668144573" schema="/schemas/apps/celestia/starStyle"/>
+			<entry name="fullScreen" mtime="1668144573" schema="/schemas/apps/celestia/fullScreen"/>
+			<entry name="verbosity" mtime="1668144573" schema="/schemas/apps/celestia/verbosity"/>
+			<entry name="showLocalTime" mtime="1668144573" schema="/schemas/apps/celestia/showLocalTime"/>
+			<entry name="distanceLimit" mtime="1668144573" schema="/schemas/apps/celestia/distanceLimit"/>
+			<entry name="galaxyLightGain" mtime="1668144573" schema="/schemas/apps/celestia/galaxyLightGain"/>
+			<entry name="visualMagnitude" mtime="1668144573" schema="/schemas/apps/celestia/visualMagnitude"/>
+			<entry name="ambientLight" mtime="1668144573" schema="/schemas/apps/celestia/ambientLight"/>
+			<entry name="winY" mtime="1668144573" schema="/schemas/apps/celestia/winY"/>
+			<entry name="winX" mtime="1668144573" schema="/schemas/apps/celestia/winX"/>
+			<entry name="winHeight" mtime="1668144573" schema="/schemas/apps/celestia/winHeight"/>
+			<entry name="winWidth" mtime="1668144573" schema="/schemas/apps/celestia/winWidth"/>
+			<dir name="orbits">
+				<entry name="unknown" mtime="1668144573" schema="/schemas/apps/celestia/orbits/unknown"/>
+				<entry name="invisible" mtime="1668144573" schema="/schemas/apps/celestia/orbits/invisible"/>
+				<entry name="spacecraft" mtime="1668144573" schema="/schemas/apps/celestia/orbits/spacecraft"/>
+				<entry name="comet" mtime="1668144573" schema="/schemas/apps/celestia/orbits/comet"/>
+				<entry name="asteroid" mtime="1668144573" schema="/schemas/apps/celestia/orbits/asteroid"/>
+				<entry name="moon" mtime="1668144573" schema="/schemas/apps/celestia/orbits/moon"/>
+				<entry name="planet" mtime="1668144573" schema="/schemas/apps/celestia/orbits/planet"/>
+			</dir>
+			<dir name="labels">
+				<entry name="globular" mtime="1668144573" schema="/schemas/apps/celestia/labels/globular"/>
+				<entry name="i18n" mtime="1668144573" schema="/schemas/apps/celestia/labels/i18n"/>
+				<entry name="openCluster" mtime="1668144573" schema="/schemas/apps/celestia/labels/openCluster"/>
+				<entry name="nebula" mtime="1668144573" schema="/schemas/apps/celestia/labels/nebula"/>
+				<entry name="comet" mtime="1668144573" schema="/schemas/apps/celestia/labels/comet"/>
+				<entry name="location" mtime="1668144573" schema="/schemas/apps/celestia/labels/location"/>
+				<entry name="spacecraft" mtime="1668144573" schema="/schemas/apps/celestia/labels/spacecraft"/>
+				<entry name="asteroid" mtime="1668144573" schema="/schemas/apps/celestia/labels/asteroid"/>
+				<entry name="galaxy" mtime="1668144573" schema="/schemas/apps/celestia/labels/galaxy"/>
+				<entry name="constellation" mtime="1668144573" schema="/schemas/apps/celestia/labels/constellation"/>
+				<entry name="moon" mtime="1668144573" schema="/schemas/apps/celestia/labels/moon"/>
+				<entry name="planet" mtime="1668144573" schema="/schemas/apps/celestia/labels/planet"/>
+				<entry name="star" mtime="1668144573" schema="/schemas/apps/celestia/labels/star"/>
+			</dir>
+			<dir name="render">
+				<entry name="gridGalactic" mtime="1668144573" schema="/schemas/apps/celestia/render/gridGalactic"/>
+				<entry name="gridHorizontal" mtime="1668144573" schema="/schemas/apps/celestia/render/gridHorizontal"/>
+				<entry name="gridEcliptic" mtime="1668144573" schema="/schemas/apps/celestia/render/gridEcliptic"/>
+				<entry name="globulars" mtime="1668144573" schema="/schemas/apps/celestia/render/globulars"/>
+				<entry name="openClusters" mtime="1668144573" schema="/schemas/apps/celestia/render/openClusters"/>
+				<entry name="nebulae" mtime="1668144573" schema="/schemas/apps/celestia/render/nebulae"/>
+				<entry name="partialTrajectories" mtime="1668144573" schema="/schemas/apps/celestia/render/partialTrajectories"/>
+				<entry name="markers" mtime="1668144573" schema="/schemas/apps/celestia/render/markers"/>
+				<entry name="cometTails" mtime="1668144573" schema="/schemas/apps/celestia/render/cometTails"/>
+				<entry name="autoMag" mtime="1668144573" schema="/schemas/apps/celestia/render/autoMag"/>
+				<entry name="boundaries" mtime="1668144573" schema="/schemas/apps/celestia/render/boundaries"/>
+				<entry name="ringShadows" mtime="1668144573" schema="/schemas/apps/celestia/render/ringShadows"/>
+				<entry name="eclipseShadows" mtime="1668144573" schema="/schemas/apps/celestia/render/eclipseShadows"/>
+				<entry name="smoothLines" mtime="1668144573" schema="/schemas/apps/celestia/render/smoothLines"/>
+				<entry name="atmospheres" mtime="1668144573" schema="/schemas/apps/celestia/render/atmospheres"/>
+				<entry name="nightMaps" mtime="1668144573" schema="/schemas/apps/celestia/render/nightMaps"/>
+				<entry name="celestialSphere" mtime="1668144573" schema="/schemas/apps/celestia/render/celestialSphere"/>
+				<entry name="orbits" mtime="1668144573" schema="/schemas/apps/celestia/render/orbits"/>
+				<entry name="cloudMaps" mtime="1668144573" schema="/schemas/apps/celestia/render/cloudMaps"/>
+				<entry name="diagrams" mtime="1668144573" schema="/schemas/apps/celestia/render/diagrams"/>
+				<entry name="galaxies" mtime="1668144573" schema="/schemas/apps/celestia/render/galaxies"/>
+				<entry name="planets" mtime="1668144573" schema="/schemas/apps/celestia/render/planets"/>
+				<entry name="stars" mtime="1668144573" schema="/schemas/apps/celestia/render/stars"/>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

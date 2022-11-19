@@ -1,3 +1,4 @@
+![Downloads Total](https://img.shields.io/github/downloads/ksharindam/appimage-for-legacy-apps/total)
 # AppImage for Legacy Apps  
 Some of my favourite Linux apps are becoming obsolete and being removed from the repositories.  
 So, whenever I upgrade my distro to a newer version, I lost few apps.  

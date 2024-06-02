@@ -15,3 +15,7 @@ Download : [[x86-64](https://github.com/ksharindam/appimage-for-legacy-apps/rele
 ## BKChem  
 It is best, most simple yet most featureful 2D chemical drawing tool for Linux.  
 Download : [[x86-64](https://github.com/ksharindam/appimage-for-legacy-apps/releases/latest/download/BKchem-x86_64.AppImage)] [[armhf](https://github.com/ksharindam/appimage-for-legacy-apps/releases/latest/download/BKchem-armhf.AppImage)]  
+
+## Qt4 Designer  
+I still use it to design Qt5 UI, because qt5 designer requires to install qttools5-dev-tools.  
+Download : [[x86-64](https://github.com/ksharindam/appimage-for-legacy-apps/releases/latest/download/Qt_4_Designer-x86_64.AppImage)]  
